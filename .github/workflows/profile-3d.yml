@@ -32,5 +32,6 @@ jobs:
             echo "No 3D contribution graph changes to commit."
           else
             git commit -m "Update 3D contribution graph [skip ci]"
+            git pull --rebase origin main
             git push
           fi
